@@ -3,7 +3,7 @@
 <html lang="en">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
 <head>
-    <title>Contact Us </title>
+    <title>Контаклар</title>
     <!-- custom-theme -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -139,8 +139,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="w3_agile_image">
             <img src="{% static 'images/1.png' %}" alt=" " class="img-responsive"/>
         </div>
-        <p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit
-            sollicitudin.</p>
+        <p class="agile_para"></p>
         <!---728x90--->
 
         <div class="w3ls_news_grids">
@@ -148,11 +147,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="agileits_mail_grid_right1 agile_mail_grid_right1">
                     <form action="#" method="post">
 
-                          {% csrf_token %}
-{#                        {{ form.as_p }}#}
+                        {% csrf_token %}
+                        {#                                                {{ form.as_p }}#}
 
-							<span>
-								<i>Исингиз</i>
+                        <span>
+								<i>Isim</i>
 								<input type="text" name="full" id="id_full" placeholder=" " required="">
 							</span>
                         <span>
@@ -160,20 +159,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<input type="email" name="email" id="id_email" placeholder=" " required="">
 							</span>
                         <span>
-								<i>Мавзу</i>
+								<i>Mavzu</i>
 								<input type="text" id="id_subject" name="subject" placeholder=" " required="">
 							</span>
                         <span>
-								<i>Изоҳлар</i>
+								<i>Izohlar</i>
 								<textarea name="message" placeholder=" " id="id_message" required=""></textarea>
 							</span>
                         <div class="w3_submit">
-                            <input type="submit" value="Юбориш">
+                            <input type="submit" value="Yuborish">
                         </div>
                     </form>
                 </div>
             </div>
-
 
 
             <div class="col-md-4 w3_agile_mail_right">
@@ -194,7 +192,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                         <div class="w3layouts_mail_grid_left2">
                             <h3>Манзил</h3>
-                            <p>My Company 8907 Ukraine.</p>
+                            <p>Узбекистон Республикаси Тошкент шахар
+                                Сергили тумани Софил кўчаси, 51-уй</p>
                         </div>
                         <div class="clearfix"></div>
                     </div>
@@ -204,7 +203,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                         <div class="w3layouts_mail_grid_left2">
                             <h3>Телефон рақам</h3>
-                            <p>+(0121) 121 121</p>
+                            <p>+99893 502 30 05</p>
                         </div>
                         <div class="clearfix"></div>
                     </div>
@@ -214,7 +213,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
 </div>
-<div id="map"></div>
+
+{#<div id="ma" style="width: 455rem !important;">#}
+{#<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6003.6248363594395!2d69.232017!3d41.204063!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x82c4470d1ceb5b8!2zNDHCsDEyJzE0LjYiTiA2OcKwMTMnNTUuMyJF!5e0!3m2!1sru!2s!4v1639114373808!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>#}
+{#</div>#}
 <!-- //contact -->
 <script type="text/javascript">
     // When the window has finished loading create our google map below

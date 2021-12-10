@@ -10,6 +10,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content="Germinate Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+
+    <link rel="icon" href="{% static 'images/agro0.png' %}" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/agro0.png' %}"/>
+
+
     <script type="application/x-javascript"> addEventListener("load", function () {
         setTimeout(hideURLbar, 0);
     }, false);
@@ -90,16 +95,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="container">
         <div class="w3_agileits_banner_main_grid">
             <div class="w3_agile_logo">
-                <a href="{% url 'home' %}"><img src="{% static 'images/agro0.png' %}" style="width: 341px; height: 286px; margin-top: -128px; margin-left: -135px" alt=""></a>
+                <a href="{% url 'home' %}"><img src="{% static 'images/agro0.png' %}"
+                                                style="width: 341px; height: 286px; margin-top: -128px; margin-left: -135px"
+                                                alt=""></a>
             </div>
-            <div class="agile_social_icons_banner">
-                <ul class="agileits_social_list">
-                    <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                    <li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
+{#            <div class="agile_social_icons_banner">#}
+{#                <ul class="agileits_social_list">#}
+{#                    <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>#}
+{#                    <li><a href="#" class="agile_twitter"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>#}
+{#                    <li><a href="#" class="w3_agile_dribble"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>#}
+{#                </ul>#}
+{#            </div>#}
             <div class="agileits_w3layouts_menu">
                 <div class="shy-menu">
                     <a class="shy-menu-hamburger">
@@ -126,12 +132,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="w3_banner_info">
             <div class="w3_banner_info_grid">
-                <h3 class="test">I'm Planting A Tree To Teach Me To Gather Strength From My Deepest Roots</h3>
-                <p>Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit
-                    sollicitudin. Nunc tortor lorem, viverra sed diam ut, blandit efficitur leo.</p>
+                <h3 class="test">Бир дона экилган муаффақиятли уруғ сизга минглаб сармоя келтириши мумкин, бу табиат
+                    қонуни.</h3>
+                <p>
+                </p>
                 <ul>
-                    <li><a href="contact.html" class="w3l_contact">Contact Us</a></li>
-                    <li><a href="#" class="w3ls_more" data-toggle="modal" data-target="#myModal">Read More</a></li>
+                    <li><a href="{% url 'contact' %}" class="w3l_contact">Контак</a></li>
+                    <li><a href="{% url 'about' %}" class="w3ls_more" data-toggle="modal" data-target="#myModal">Батафсил</a></li>
                 </ul>
             </div>
         </div>
@@ -229,7 +236,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- welcome -->
 <div class="welcome">
     <div class="container">
-        <h3 class="agileits_w3layouts_head"><span>Плантациямизга</span> хуш келибсиз</h3>
+        <h3 class="agileits_w3layouts_head">Бизнинг <span>махсулотларимиз-ишончли</span> танлов!</h3>
         <div class="w3_agile_image">
             <img src="{% static 'images/1.png' %}" alt=" " class="img-responsive"/>
         </div>
@@ -284,8 +291,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div id="welcome_bottom" class="welcome-bottom">
     <div class="col-md-6 wthree_welcome_bottom_left">
         <h3>Биз доим <span>ҳаракатдамиз</span></h3>
-        <p>Nullam pretium euismod orci ac porta. Interdum et malesuada fames ac ante
-            ipsum primis in faucibus. Donec at scelerisque dolor, vel placerat mi.</p>
+        <p>Бизнинг бойитиИган ўсимлик уруглари ва ўсимликларни ҳимоя қилиш воситаларини ҳарид қилган муаффақиятли
+            мижозларимиз-рақамарда!</p>
         <div class="col-md-6 wthree_welcome_bottom_left_grid">
             <div class="w3l_social_icon_gridl">
                 <img src="{% static 'images/8.png' %}" alt=" " class="img-responsive"/>
@@ -394,11 +401,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <p class="agile_para agileits_para">Эмали ва Исмингизни киргизинг</p>
         <div class="w3ls_news_grids w3ls_newsletter_grids">
-            <form action="#" method="post">
-                <input name="Your Name" placeholder="Your Name" type="text" required="">
-                <input name="Your Email" placeholder="Your Email" type="email" required="">
-                <input type="submit" value="Subscribe">
-            </form>
+            {#            <form action="#" method="post">#}
+            {#                <input name="Your Name" placeholder="Your Name" type="text" required="">#}
+            {#                <input name="Your Email" placeholder="Your Email" type="email" required="">#}
+            {#                <input type="submit" value="Subscribe">#}
+            {#            </form>#}
         </div>
     </div>
 </div>
@@ -422,9 +429,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!---728x90--->
 
     <div class="container" style="background: white !important;">
-        <div class="row">
-
-
+        <div style="display: flex">
             <div class="col-lg-3"><img style="height: 200px; width: 200px" src="{% static 'images/agro7.png' %}" alt="">
             </div>
             <div class="col-lg-3"><img style="height: 200px; width: 200px" src="{% static 'images/agro2.jpg' %}" alt="">

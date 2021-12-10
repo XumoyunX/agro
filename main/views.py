@@ -46,6 +46,7 @@ def contact(request):
             data = request.POST
             form.save()
             message = f"Xabar keldi:\nIsmi: {data['full']}\nEmail: {data['email']}\nMavzu: {data['subject']}\nXabar: {data['message']}"
+            # print(message, 'SALOM')
             subject = 'Saytdan'
             email_from = settings.EMAIL_HOST_USER
             recipient_list = ['cool.hojimurod2001@mail.ru', 'xumoyuntoxtayev19@gmail.com']

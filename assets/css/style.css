@@ -34,7 +34,7 @@ input[type="submit"],input[type="reset"],a{
 }
 /*-- banner --*/
 .banner{
-	background: url(../images/banner.jpg) no-repeat 0px 0px;
+	background: url(../images/agro11.png) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -44,7 +44,7 @@ input[type="submit"],input[type="reset"],a{
 	position: relative;
 }
 .banner1{
-	background: url(../images/banner.jpg) no-repeat 0px 0px;
+	background: url(../images/agro12.png) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1388,7 +1388,7 @@ figure.agileits_effect_moses:hover img {
     border-radius: 40px;
     width: 100px;
 }
-#map {
+#ma {
 	width: 100%;
 	min-height: 500px;
 }
@@ -2060,7 +2060,7 @@ h2.typoh2{
 	.agileits_mail_grid_right1 {
 		padding: 2em;
 	}
-	#map {
+	#ma {
 		min-height: 400px;
 	}
 	.testimonials {
@@ -2323,7 +2323,7 @@ h2.typoh2{
 		width: 90%;
 		margin: 0 auto 1.5em;
 	}
-	#map {
+	#ma {
 		min-height: 350px;
 	}
 }
@@ -2497,7 +2497,7 @@ h2.typoh2{
 	.w3layouts_mail_grid_left2 {
 		width: 85%;
 	}
-	#map {
+	#ma {
 		min-height: 300px;
 	}
 }
@@ -3054,7 +3054,7 @@ h2.typoh2{
 	.w3layouts_mail_grid_left2 {
 		width: 70%;
 	}
-	#map {
+	#ma {
 		min-height: 250px;
 	}
 	.agileinfo_footer_grid ul.agileits_social_list li {
