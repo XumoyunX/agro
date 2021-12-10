@@ -99,13 +99,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 style="width: 341px; height: 286px; margin-top: -128px; margin-left: -135px"
                                                 alt=""></a>
             </div>
-{#            <div class="agile_social_icons_banner">#}
-{#                <ul class="agileits_social_list">#}
-{#                    <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>#}
-{#                    <li><a href="#" class="agile_twitter"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>#}
-{#                    <li><a href="#" class="w3_agile_dribble"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>#}
-{#                </ul>#}
-{#            </div>#}
+            <div class="agile_social_icons_banner">
+                <ul class="agileits_social_list">
+                    <li><a href="#" class="agile_twitter"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="w3_agile_dribble"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
             <div class="agileits_w3layouts_menu">
                 <div class="shy-menu">
                     <a class="shy-menu-hamburger">
@@ -117,12 +116,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <nav class="menu menu--horatio link-effect-8" id="link-effect-8">
                             <ul class="w3layouts_menu__list">
                                 <li class="active"><a href="{% url 'home' %}">Асосий</a></li>
-                                <li><a href="{% url 'about' %}">Ҳақимизда</a></li>
-                                <li><a href="{% url 'servicer' %}">Маҳсулот</a></li>
-                                <li><a href="{% url 'gallery' %}">Галлерй</a></li>
-                                <li><a href="{% url 'news' %}">Янглик</a></li>
-                                <li><a href="{% url 'contact' %}">Контак</a></li>
-                            </ul>
+                                <li><a href="{% url 'about' %}">Биз ҳақимизда</a></li>
+
+
+
+
+                                <li><a href="{% url 'servicer' %}">МАХСУЛОТЛАРИМИЗ
+
+</a></li>
+{#                                <li><a href="{% url 'gallery' %}">Галлерй</a></li>#}
+                                <li><a href="{% url 'news' %}">ЯНГИЛИКЛАР
+
+</a></li>
+                                <li><a href="{% url 'contact' %}">Алоқа</a></li>
+
+                           </ul>
                         </nav>
                     </div>
                     <div class="clearfix"></div>
@@ -137,8 +145,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <p>
                 </p>
                 <ul>
-                    <li><a href="{% url 'contact' %}" class="w3l_contact">Контак</a></li>
-                    <li><a href="{% url 'about' %}" class="w3ls_more" data-toggle="modal" data-target="#myModal">Батафсил</a></li>
+                    <li><a href="{% url 'contact' %}" class="w3l_contact" style="color: white !important;">Боғланиш</a></li>
+
+                   <li><a href="{% url 'about' %}" class="w3ls_more" data-toggle="modal">Батафсил</a></li>
                 </ul>
             </div>
         </div>
@@ -376,7 +385,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         {#							<div class="wthree_text"><h3>plantation</h3></div>#}
                         {#						</div>#}
                     </div>
-                    <div class="agileits_w3layouts_news_grid">
+                    <div class="agileits_w3layouts_news_grid" style="height: 191px !important;">
                         <ul>
                             <li><i class="fa fa-calendar" aria-hidden="true"></i>{{ i.data|date }}</li>
                             <li><i class="fa fa-user" aria-hidden="true"></i><a href="#">{{ user }}</a></li>
@@ -399,7 +408,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="w3_agile_image">
             <img src="{% static 'images/12.png' %}" alt=" " class="img-responsive">
         </div>
-        <p class="agile_para agileits_para">Эмали ва Исмингизни киргизинг</p>
         <div class="w3ls_news_grids w3ls_newsletter_grids">
             {#            <form action="#" method="post">#}
             {#                <input name="Your Name" placeholder="Your Name" type="text" required="">#}
