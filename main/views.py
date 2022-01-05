@@ -15,8 +15,7 @@ import io, os
 
 
 def venue_pdf(request, pk):
-
-    vanue = Pdf.objects.get(id=pk)
+    vanue = Pdf.objects.get(pk=pk)
 
     absolute_url = str(BASE_DIR) + vanue.pdf.url
     with open(absolute_url, 'rb') as pdf:
