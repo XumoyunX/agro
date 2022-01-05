@@ -2,8 +2,34 @@ from django.conf import settings
 from django.shortcuts import render
 
 from main.forms import Sendd
-from main.models import Product, News, Gallery, Send
+from main.models import Product, News, Gallery, Send, Pdf
 from django.core.mail import send_mail
+from agro.settings import BASE_DIR
+# from easy_pdf.views import PDFTemplateView
+from django.http import FileResponse, HttpResponse
+from django.http import HttpResponseRedirect
+import io, os
+from reportlab.pdfgen import canvas
+from reportlab.lib.units import inch
+from reportlab.lib.pagesizes import letter
+
+
+
+
+
+def venue_pdf(request, pk):
+
+    vanue = Pdf.objects.get(id=pk)
+
+    print(BASE_DIR)
+    absolute_url = str(BASE_DIR) + vanue.pdf.url
+    with open(absolute_url, 'rb') as pdf:
+        response = HttpResponse(pdf.read(), content_type="application/pdf")
+        response['Content-Disposition'] = "attachment; filename" + vanue.pdf.name
+        return response
+
+
+
 
 
 def home(request):
@@ -16,8 +42,32 @@ def home(request):
     return render(request, 'main/index.html', tex)
 
 
+
+
+
 def about(request):
-    return render(request, 'main/about.html')
+
+    pdf = Pdf.objects.all()
+
+    cxt = {
+        'pdf': pdf
+    }
+
+    return render(request, 'main/about.html', cxt)
+
+#
+# class About():
+#
+#
+#     template_name = 'main/about.html'
+
+
+
+
+# def about(request):
+#     pdf = Pdf.objects.all()
+#
+#     return render(request, 'main/about.html', {"pdf": pdf})
 
 
 def servicer(request):

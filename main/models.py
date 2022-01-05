@@ -35,3 +35,6 @@ class Send(models.Model):
 
     def __str__(self):
         return self.full
+
+class Pdf(models.Model):
+    pdf = models.FileField(upload_to='pdf')
