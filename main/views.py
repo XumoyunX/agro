@@ -5,13 +5,10 @@ from main.forms import Sendd
 from main.models import Product, News, Gallery, Send, Pdf
 from django.core.mail import send_mail
 from agro.settings import BASE_DIR
-# from easy_pdf.views import PDFTemplateView
 from django.http import FileResponse, HttpResponse
 from django.http import HttpResponseRedirect
 import io, os
-from reportlab.pdfgen import canvas
-from reportlab.lib.units import inch
-from reportlab.lib.pagesizes import letter
+
 
 
 
