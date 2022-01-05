@@ -18,7 +18,6 @@ def venue_pdf(request, pk):
 
     vanue = Pdf.objects.get(id=pk)
 
-    print(BASE_DIR)
     absolute_url = str(BASE_DIR) + vanue.pdf.url
     with open(absolute_url, 'rb') as pdf:
         response = HttpResponse(pdf.read(), content_type="application/pdf")
