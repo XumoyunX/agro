@@ -1,10 +1,9 @@
 from django.urls import path, include
 from main.views import *
-# from main.views import About
+
 
 urlpatterns = [
     path('', home, name='home'),
-    path('Биз-ҳақимизда/', about,  name='about'),
     path('Маҳсулот/', servicer, name='servicer'),
     path('Галлерй/', gallery, name='gallery'),
     path('Контак/ ', contact, name='contact'),

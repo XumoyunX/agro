@@ -40,30 +40,6 @@ def home(request):
 
 
 
-def about(request):
-
-    pdf = Pdf.objects.all()
-
-    cxt = {
-        'pdf': pdf
-    }
-
-    return render(request, 'main/about.html', cxt)
-
-#
-# class About():
-#
-#
-#     template_name = 'main/about.html'
-
-
-
-
-# def about(request):
-#     pdf = Pdf.objects.all()
-#
-#     return render(request, 'main/about.html', {"pdf": pdf})
-
 
 def servicer(request):
     pro = Product.objects.all()
@@ -103,9 +79,11 @@ def contact(request):
 
 def news(request):
     nows = News.objects.all()
+    pdf = Pdf.objects.all()
 
     tex = {
-        "nows": nows
+        "nows": nows,
+        'pdf': pdf
     }
 
     return render(request, 'main/news.html', tex)

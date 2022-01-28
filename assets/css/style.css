@@ -1090,12 +1090,7 @@ figure.agileits_effect_moses:hover img {
 	display: block;
 	font-size: 1em;
 }
-.agileits_w3layouts_learn_more a:focus{
-	outline:none;
-}
-.agileits_w3layouts_learn_more a:hover{
-	color:#212121;
-}
+
 .w3_agileits_team_grid h4{
 	font-size:1.2em;
 	color:#212121;
@@ -1196,12 +1191,7 @@ figure.agileits_effect_moses:hover img {
 .agileits_learn_more{
 	width:18% !important;
 }
-.agileits_w3layouts_learn_more.hvr-radial-out {
-    width: 50%;
-}
-.agileits_w3layouts_learn_more a{
-	padding:10px 0 !important;
-}
+
 /*-- //services-bottom --*/
 /*-- testimonials --*/
 .testimonials{

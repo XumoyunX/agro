@@ -37,4 +37,4 @@ class Send(models.Model):
         return self.full
 
 class Pdf(models.Model):
-    pdf = models.FileField(upload_to='pdf')
+    pdf = models.FileField(upload_to='pdf/')
