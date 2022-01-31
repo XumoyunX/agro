@@ -140,8 +140,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="w3_agile_image">
             <img src="{% static 'images/1.png' %}" alt=" " class="img-responsive"/>
         </div>
-        <p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit
-            sollicitudin.</p>
+        {#        <p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit#}
+        {#            sollicitudin.</p>#}
         <div class="w3_agile_services_grids">
             <div class="col-md-6 w3_agile_services_grid">
                 <div class="col-xs-4 w3_agile_services_grid_left">
@@ -150,9 +150,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                 </div>
                 <div class="col-xs-8 w3_agile_services_grid_right">
-                    <h4>Ut et turpis interdum</h4>
-                    <p>Fusce eget nisi ac tellus dapibus eleifend in in erat. Vestibulum eu leo quis
-                        diam blandit rutrum et eu dui. Vivamus vitae euismod diam.</p>
+                    <h4>Qo‘llanilishi va ozuqaviy qiymati haqida</h4>
+                    <p>Odamlar qachon bu o‘simlikni madaniylashtirgani borasida aniq ma'lumot yo‘q. Bu taxminan miloddan
+                        avvalgi 7 mingdan 12 minggacha bo‘lgan davr oralig‘ida yuz bergan.</p>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -163,9 +163,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                 </div>
                 <div class="col-xs-8 w3_agile_services_grid_right">
-                    <h4>Vivamus vitae euismod</h4>
-                    <p>Fusce eget nisi ac tellus dapibus eleifend in in erat. Vestibulum eu leo quis
-                        diam blandit rutrum et eu dui. Vivamus vitae euismod diam.</p>
+                    <h4>Makkajo’xorining foydali xususiyatlari</h4>
+                    <p>Makkajo’xori qadimgi hindu qabilalari orasida muqaddas mahsulot sanalgan. Ular makkajo’xorining
+                        ozuqaviy xususiyatlari tufayli ham uni sevib iste’mol qilishgan. Va ular haq bo’lib chiqishdi,
+                        chunki makkajo’xori quyidagi xususiyatlarga ega.</p>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -197,7 +198,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <p>{{ i.text|truncatechars:"80" }}</p>
                         <p>{{ i.price }}so'm</p>
                         <div class="agileits_w3layouts_learn_more">
-                            <a href="{% url 'contact' %}" data-toggle="modal" data-target="{% url 'contact' %}">Yuborish</a>
+                            <a href="{% url 'contact' %}" data-toggle="modal"
+                               data-target="{% url 'contact' %}">Yuborish</a>
                         </div>
                     </div>
                 </div>
@@ -214,22 +216,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="w3_agile_image">
             <img src="{% static 'images/1.png' %}" alt=" " class="img-responsive">
         </div>
-        <p class="agile_para">Morbi viverra lacus commodo felis semper, eu iaculis lectus nulla at sapien blandit
-            sollicitudin.</p>
-        <div class="w3ls_news_grids">
-            <h3>Mahsulot</h3>
-            <p style="margin-top: 15px; margin-bottom: 20px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at cum cupiditate est et excepturi
-                fugiat fugit iusto labore nemo, neque nobis officia praesentium, rerum, sunt voluptate voluptatibus!
-                Cupiditate dolorem illo perspiciatis quos ullam! Accusantium aliquid animi architecto assumenda at atque
-                blanditiis, commodi consequatur dignissimos ea fuga ipsam magnam nemo nesciunt nulla odit placeat quod
-                repudiandae sit temporibus vel veritatis voluptas voluptates. Beatae doloremque, earum et eveniet, fugit
-                impedit in itaque, laboriosam libero nobis optio placeat quo quod reprehenderit sunt tempore tenetur
-                totam! Aliquam animi aperiam autem cumque delectus dolore, fugit hic incidunt iste iure labore
-                laboriosam libero, maiores nobis nostrum officia provident reiciendis repellat repellendus sequi, soluta
-                totam ut vero! A aspernatur at cum debitis dicta dignissimos dolor dolorem eaque est, excepturi fugiat
-                fugit harum hic magnam maiores maxime neque, nesciunt nihil non obcaecati officiis pariatur
-                perspiciatis, quidem quo ratione rem reprehenderit sapiente sequi tempore vel veniam veritatis vero.</p>
-        </div>
+        <p class="agile_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eius exercitationem
+            laborum nihil odit. Blanditiis, sapiente vero! Accusamus animi assumenda atque beatae, ducimus eaque
+            eligendi explicabo impedit neque obcaecati porro qui repellat sapiente sed suscipit temporibus vitae!
+            Accusamus adipisci animi, architecto asperiores, debitis, dolorum in itaque nisi officia provident
+            repellat.</p>
+        <div style="margin-top: 70px"></div>
+        {#        <div class="w3ls_news_grids">#}
+        {#            <h3>Mahsulot</h3>#}
+        {#            <p style="margin-top: 15px; margin-bottom: 20px">Lorem ipsum dolor sit amet, consectetur adipisicing elit.#}
+        {#                Accusantium at cum cupiditate est et excepturi#}
+        {#                fugiat fugit iusto labore nemo, neque nobis officia praesentium, rerum, sunt voluptate voluptatibus!#}
+        {#                Cupiditate dolorem illo perspiciatis quos ullam! Accusantium aliquid animi architecto assumenda at atque#}
+        {#                blanditiis, commodi consequatur dignissimos ea fuga ipsam magnam nemo nesciunt nulla odit placeat quod#}
+        {#                repudiandae sit temporibus vel veritatis voluptas voluptates. Beatae doloremque, earum et eveniet, fugit#}
+        {#                impedit in itaque, laboriosam libero nobis optio placeat quo quod reprehenderit sunt tempore tenetur#}
+        {#                totam! Aliquam animi aperiam autem cumque delectus dolore, fugit hic incidunt iste iure labore#}
+        {#                laboriosam libero, maiores nobis nostrum officia provident reiciendis repellat repellendus sequi, soluta#}
+        {#                totam ut vero! A aspernatur at cum debitis dicta dignissimos dolor dolorem eaque est, excepturi fugiat#}
+        {#                fugit harum hic magnam maiores maxime neque, nesciunt nihil non obcaecati officiis pariatur#}
+        {#                perspiciatis, quidem quo ratione rem reprehenderit sapiente sequi tempore vel veniam veritatis vero.</p>#}
+        {#        </div>#}
     </div>
 </div>
 <!-- //testimonials -->

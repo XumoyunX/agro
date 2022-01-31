@@ -34,7 +34,7 @@ input[type="submit"],input[type="reset"],a{
 }
 /*-- banner --*/
 .banner{
-	background: url(../images/agro11.png) no-repeat 0px 0px;
+	background: url(../images/agro_new.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -44,7 +44,7 @@ input[type="submit"],input[type="reset"],a{
 	position: relative;
 }
 .banner1{
-	background: url(../images/agro12.png) no-repeat 0px 0px;
+	background: url(../images/agro_new.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
