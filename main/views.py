@@ -70,7 +70,7 @@ def contact(request):
             # print(message, 'SALOM')
             subject = 'Saytdan'
             email_from = settings.EMAIL_HOST_USER
-            recipient_list = ['cool.hojimurod2001@mail.ru', 'xumoyuntoxtayev19@gmail.com']
+            recipient_list = ['gulbaba@agrobusinessllc.com', 'info@agrobusinessllc.com']
             send_mail(subject, message, email_from, recipient_list)
 
 
