@@ -160,7 +160,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><i class="fa fa-calendar" aria-hidden="true"></i>{{ i.data|date }}</li>
 							<li><i class="fa fa-user" aria-hidden="true"></i>{{ user }}</li>
 						</ul>
-						<h4><a href="#" data-toggle="modal" data-target="#myModal">{{ i.name|truncatechars:"45" }}</a></h4>
+						<h4>{{ i.name|truncatechars:"45" }}</h4>
 						<p>{{ i.text|truncatechars:"200" }}</p>
 					</div>
 				</div>
@@ -172,7 +172,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <div class="welcome">
     <div class="container">
-    <h6 style="margin-top: 100px; text-align: center; font-size: 40px">Pdf yuklab olish</h6>
+    <h6 style="margin-top: 30px; text-align: center; font-size: 40px">Pdf yuklab olish</h6>
         <div class="w3_agile_image">
             <img src="{% static 'images/1.png' %}" alt=" " class="img-responsive"/>
         </div>
