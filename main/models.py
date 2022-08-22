@@ -5,7 +5,7 @@ class News(models.Model):
     photo = models.ImageField(upload_to='images/')
     name = models.TextField()
     text = models.TextField()
-    data = models.DateTimeField()
+    data = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.name

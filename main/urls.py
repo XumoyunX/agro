@@ -3,6 +3,7 @@ from main.views import *
 
 
 urlpatterns = [
+    # path('', include('clinet.urls')),
     path('', home, name='home'),
     path('Маҳсулот/', servicer, name='servicer'),
     path('Галлерй/', gallery, name='gallery'),
